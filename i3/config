@@ -367,7 +367,7 @@ exec --no-startup-id numlockx on
 exec --no-startup-id sleep 2 && nitrogen --restore
 
 # start polybar
-exec_always --no-startup-id /home/xtremer/.config/polybar/launch.sh
+exec_always --no-startup-id /home/cyberknight/.config/polybar/launch.sh
 
 # start conky:
 #exec_always --no-startup-id conky
