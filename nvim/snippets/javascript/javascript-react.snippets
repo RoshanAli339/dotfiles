@@ -1,0 +1,59 @@
+snippet fc
+	const ${1:ComponentName} = (${2:props}) => {
+		return(
+			<>
+				${3}
+			</>
+		)
+	}
+
+snippet cc
+	class ${1:ClassName} extends Component {
+		render(){
+			return (
+				<>
+					${3}
+				</>
+			)
+		}
+	}
+
+snippet efc
+	export default const ${1:ComponentName} = (${2:props}) => {
+		return(
+			<>
+				${3}
+			</>
+		)
+	}
+
+snippet ecc
+	export default class ${1:ClassName} extends Component {
+		render(){
+			return (
+				<>
+					${3}
+				</>
+			)
+		}
+	}
+
+snippet ius
+	import { useState } from 'react'
+
+snippet iue
+	import { useEffect } from 'react'
+
+snippet iuse
+	import { useState, useEffect } from 'react'
+
+snippet uses
+	const [${1:var}, ${2:setVar}] = useState(${3:initialState})
+
+snippet usee
+	useEffect(()=>{
+		${1}
+	})
+	
+snippet irh import React hooks
+	import { use$1 } from 'react';

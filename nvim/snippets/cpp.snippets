@@ -1,0 +1,42 @@
+extends c
+
+snippet base 
+	#include <bits/stdc++.h>
+
+	using namespace std;
+
+	class Solution{
+		public:
+			void solve (vector<int> arr, int &size){
+				
+			}
+	};
+
+	int main(){
+		int T;
+		cin >> T;
+		int i = 1;
+
+		while(T--){
+			cout << "Test case #" << i << endl;
+			int n;
+			cin >> n;
+			vector<int> arr(n);
+			for (auto &v: arr){
+				cin >> v;
+			}
+
+			cout << "Input " << i << " : " ;
+			for (auto &v: arr){
+				cout << v << " ";
+			}
+			cout << endl;
+
+			Solution ob;
+			int result = ob.solve(arr, n);
+			cout << "Result = " << result << endl;
+			i++;
+			cout << endl;
+		}
+	}
+
