@@ -1,0 +1,1 @@
+/home/cyberknight/.config/tmux
