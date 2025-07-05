@@ -45,22 +45,14 @@ shape = "Block"
 
 [font]
 size = 12
-
-[font.bold]
-family = "CaskaydiaCove Nerd Font Mono"
-style = "Bold"
-
-[font.bold_italic]
-family = "CaskaydiaCove Nerd Font Mono"
-style = "Bold Italic"
-
-[font.italic]
-family = "CaskaydiaCove Nerd Font Mono"
-style = "Italic"
-
-[font.normal]
-family = "CaskaydiaCove Nerd Font Mono"
-style = "Regular"
+normal.family = "CaskaydiaCove Nerd Font Mono"
+normal.style = "Regular"
+bold.family = "CaskaydiaCove Nerd Font Mono"
+bold.style = "Bold"
+italic.family = "CaskaydiaCove Nerd Font Mono"
+italic.style = "Italic"
+bold_italic.family = "CaskaydiaCove Nerd Font Mono"
+bold_italic.style = "Bold Italic"
 
 [[keyboard.bindings]]
 action = "SpawnNewInstance"
