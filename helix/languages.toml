@@ -1,0 +1,14 @@
+[[language]]
+name = "cpp"
+language-servers = ["clangd"]
+indent = {tab-width = 4, unit = " "}
+formatter = { command = "clang-format", args = ["-style=file"] }
+
+[[language]]
+name = "c"
+language-servers = ["clangd"]
+indent = {tab-width = 4, unit = " "}
+formatter = { command = "clang-format", args = ["-style=file"] }
+
+[language-server.clangd]
+command = "clangd"

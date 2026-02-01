@@ -1,0 +1,59 @@
+theme = "night_owl"
+
+[editor]
+line-number = "relative"
+cursorline = true
+bufferline = "always"
+shell = ["zsh", "-c"]
+scrolloff = 10
+color-modes = true
+gutters = ["diff", "diagnostics", "line-numbers", "spacer", "spacer"]
+completion-trigger-len = 1
+
+[editor.soft-wrap]
+enable = true
+
+[editor.cursor-shape]
+insert = "bar"
+normal = "block"
+select = "underline"
+
+[editor.statusline]
+left = ["mode", "spacer", "diagnostics", "workspace-diagnostics", "spinner"]
+right = ["file-name", "spacer", "position-percentage", "spacer"]
+
+[editor.indent-guides]
+render = true
+character = "┆"
+skip-levels = 1
+
+[keys.normal]
+esc = ["collapse_selection", "keep_primary_selection"]
+J = ["delete_selection", "paste_after"]
+K = ["delete_selection", "move_line_up", "paste_before"]
+G = "goto_file_end"
+C-u = ["half_page_up", "align_view_center"]
+C-d = ["half_page_down", "align_view_center"]
+"$" = "goto_line_end"
+0 = "goto_line_start"
+"^" = "goto_first_nonwhitespace"
+"A-j" = [
+  "extend_to_line_bounds",
+  "delete_selection",
+  "paste_after",
+  "select_mode",
+  "goto_line_start",
+  "normal_mode"
+]
+"A-k" = [
+  "extend_to_line_bounds",
+  "delete_selection",
+  "move_line_up",
+  "paste_before",
+  "flip_selections"
+]
+"S-tab" = "goto_previous_buffer"
+"tab" = "goto_next_buffer"
+
+[keys.normal.space]
+l = ":toggle lsp.display-inlay-hints"
